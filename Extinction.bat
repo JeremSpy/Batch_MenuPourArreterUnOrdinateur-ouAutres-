@@ -1,12 +1,12 @@
 @echo off
 color 0F
-title Extinction
+title Menu Extinction
 :top
 echo.
 echo.
 echo.
 echo a. Annuler et quitter le batch
-echo b. Redemarrer l'ordinateur dans le
+echo b. Arreter l'ordinateur dans le
 echo    temps que vous avez indiquez
 echo z. Savoir ou en est le temps...
 echo.
@@ -32,7 +32,7 @@ echo t. Hiberner
 echo x. Arreter l'ordinateur sans delai
 echo.
 echo.
-set /p opt=Ajouter un temps ou.et valider le redemarrage : 
+set /p opt=Ajouter un temps ou.et valider l'arret : 
 if not '%opt%'=='' set opt=%opt:~0,1%
 if '%opt%'=='a' goto end
 if '%opt%'=='b' goto b
@@ -56,7 +56,7 @@ if '%opt%'=='s' goto s
 if '%opt%'=='t' goto t
 if '%opt%'=='x' goto x
 if '%opt%'=='z' goto z
-echo Le choix ' %opt% ' n'est pas valide.
+echo Le choix ' %opt% ' n'est pas une option valide.
 echo.
 pause
 goto top
