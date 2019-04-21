@@ -5,15 +5,12 @@ title Extinction
 echo.
 echo.
 echo.
-echo.
-echo.
 echo a. Annuler et quitter le batch
 echo b. Redemarrer l'ordinateur dans le
 echo    temps que vous avez indiquez
-echo.
 echo z. Savoir ou en est le temps...
 echo.
-echo    ---- AJOUTER DES JOURS ------- AJOUTER DES HEURES ----
+echo     ---- AJOUTER DES JOURS ------- AJOUTER DES HEURES ----
 echo    ----                       -                        ----
 echo    ---   c. Ajouter 1 jour    -   g. Ajouter 1 heure    ---
 echo    ---   d. Ajouter 5 jours   -   h. Ajouter 8 heures   ---
@@ -33,8 +30,6 @@ echo r. Redemarrer l'ordinateur
 echo s. Fermeture de la session
 echo t. Hiberner
 echo x. Arreter l'ordinateur sans delai
-echo.
-echo.
 echo.
 echo.
 set /p opt=Ajouter un temps ou.et valider le redemarrage : 
