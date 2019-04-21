@@ -1,4 +1,4 @@
-# Batch / Menu d'arrêt de l'ordinateur
+# Batch / Menu d'arrêt de l'ordinateur ( Windows )
 
 
 Permet d'arrêter un ordinateur ( local ) sans délai
