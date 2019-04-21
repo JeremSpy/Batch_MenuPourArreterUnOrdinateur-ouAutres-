@@ -31,6 +31,8 @@ echo     ------------------------------------------------------
 echo.
 echo r. Redemarrer l'ordinateur
 echo s. Fermeture de la session
+echo t. Hiberner
+echo x. Arreter l'ordinateur sans delai
 echo.
 echo.
 echo.
@@ -56,6 +58,8 @@ if '%opt%'=='p' goto p
 if '%opt%'=='q' goto q
 if '%opt%'=='r' goto r
 if '%opt%'=='s' goto s
+if '%opt%'=='t' goto t
+if '%opt%'=='x' goto x
 if '%opt%'=='z' goto z
 echo Le choix ' %opt% ' n'est pas valide.
 echo.
@@ -114,6 +118,12 @@ shutdown /r
 goto end
 :s
 shutdown /l
+goto end
+:t
+shutdown /h
+goto end
+:x
+shutdown /p
 goto end
 :z
 echo Le nombre d'ajouts total est de %input% minutes.
